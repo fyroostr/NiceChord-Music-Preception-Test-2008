@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script type="module" src="main.js"></script>
+	<title>NiceChord Music Preception Test (2008)</title>
+</head>
+<body>
+
+<div class="slider">
+	<div class="quiz active">
+		<h1>NiceChord 音樂能力測驗（2008）</h1>
+		<p>2008 年，WiwiStudio 推出了一個名為《WiwiStudio 音樂能力測驗》的 Flash 程式，吸引了超過 500 萬人次觀看。這個程式旨在測試使用者的音樂技能，包括音感、節奏感、音樂記憶力等。</p>
+		<p>雖然原版 Flash 程式已無法在現代的瀏覽器上執行，WiwiStudio 也已更名為 NiceChord，但最近原作者 wiwi 將程式的題目和音樂素材在其 <a href="https://wiwi.blog/blog/wiwistudio-musictest" target="_blank">部落格</a> 中重新釋出，讓我們有機會再次體驗這個經典的音樂測驗遊戲。本程式使用的所有素材均來自上述部落格，如您喜歡請多多支持 <a href="https://nicechord.com" target="_blank">NiceChord</a>。</p>
+		<p>本程式希望能以比較現代的開放性格式，忠實地重現當年的遊戲體驗，讓使用者重新體驗這個富有歷史意義的音樂測驗。讓我們一起探索 2008 年 wiwi 的音樂世界，看看你的音樂天賦如何！</p>
+		<p><button name="next">繼續</button></p>
+	</div>
+	<div class="quiz" name="start">
+		<h1>歡迎</h1>
+		<p>想知道您有沒有音樂天分嗎？那麼您來對地方了！歡迎您來到 WiwiStudio 的音樂能力測驗。</p>
+		<p>這個由鋼琴家 Wiwi 設計的原創測驗，將測試您的各項音樂能力，像是對於音高、音色、節奏的辨識度、節拍穩定度和音樂記憶力等等。為了讓測驗的鑑別度高一些，Wiwi 故意將測驗設計得很困難，因此即使是受過長期音樂訓練的人，也將很難在測驗中答對超過 20 題。不過，這個測驗並不需要您有任何的音樂知識，就算您沒有學過音樂，進行測驗也不會有任何問題！</p>
+		<p>Wiwi 建議您盡可能地使用您現有最好的音響設備進行這個測驗，因為太差的電腦喇叭可能會導致您無法聽清楚題目。如果您的電腦喇叭品質不佳，或者您用的是筆記型電腦，Wiwi 會建議您改用耳機來進行測驗。</p>
+		<p>另外，也請您關閉其他正在播放聲音的應用程式或網頁。然後，按下面的「測試音量」按鈕，Wiwi 會播放一小段音樂片段，請以它為基準，將您的電腦喇叭調整到適當的音量。</p>
+		<p><button name="play" value="test">測試音量</button></p>
+		<p>整個測驗一共有 26 個題目，需要大約 20 分鐘即可完成。</p>
+		<p>進行的方式很簡單，在每個題目，您需要先聽一或兩個音樂片段，然後回答一題 2 ~ 4 個選項的選擇題。</p>
+		<p>準備好了？按下面的「開始」按鈕，開始測驗！</p>
+		<p><button name="next">開始！</button></p>
+	</div>
+	<div class="quiz">
+		<h1><button class="arrow" name="prev">&#10094;</button>恭喜你完成測驗！</h1>
+		<p>按下面的「計算分數」按鈕，讓我用原始遊戲的公式幫你算分！你也可以返回再檢查一遍答案。</p>
+		<p><button name="next">計算分數</button></p>
+	</div>
+	<div class="quiz">
+		<h1><button class="arrow" name="prev">&#10094;</button>測驗結果</h1>
+		<h3 class="sum">答對總題數：<span name="score-total"></span> / 26 題</h3>
+		<h5>各項音樂能力分數：</h5>
+		<ul>
+			<li>音感：<span name="score-preception"></span>%</li>
+			<li>節奏感：<span name="score-rhythm"></span>%</li>
+			<li>音樂記憶力：<span name="score-memory"></span>%</li>
+			<li>專注力：<span name="score-focus"></span>%</li>
+			<li>整體音樂天份：<span name="score-overall"></span>%</li>
+		</ul>
+		<div class="trophies">
+			<h3>获得了獎章</h3>
+			<ul></ul>
+		</div>
+		<h3>好玩嗎？</h3>
+		<p>如果你喜歡以上的測驗，我在 2019 年做了這個音樂測驗的續集《尋找黃金檸檬卷之聽力大挑戰》，它是一個 YouTube 影片迷宮遊戲，很好玩唷！還沒玩過的趕快到以下連結：</p>
+		<ul>
+			<li><a href="https://www.youtube.com/watch?v=6T45klBhndU" target="_blank">YouTube</a></li>
+			<li><a href="https://wiwi.video/w/1PzHNUDLgN7g4671Pk7t3q" target="_blank">WiwiVideo</a></li>
+		</ul>
+		<p><button name="next">完成</button></p>
+	</div>
+	<div class="quiz">
+		<h3>感謝遊玩！</h3>
+		<p>原作：<a href="https://wiwi.blog" target="_blank">wiwi</a>（<a href="https://nicechord.com" target="_blank">NiceChord</a>）</p>
+		<p>重製：fyroostr</p>
+		<p><button name="prev">返回</button></p>
+	</div>
+</div>
+
+<audio preload="none"></audio>
+
+<footer>
+	<div class="progress"></div>
+</footer>
+
+</body>
+</html>
