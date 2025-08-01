@@ -330,8 +330,7 @@ const score = () => {
 }
 
 const progressBar = () => {
-	const p = document.querySelector(".progress");
-	p.style.width = `${as.length/qs.length*100}%`;
+	document.querySelector(".progress").style.width = `${as.length/qs.length*100}%`;
 }
 
 const makeQuiz = () => {
@@ -443,13 +442,11 @@ const onEnded = () => {
 	if (n === "test") {
 		btn.classList.remove("disable");
 		btn.textContent = "测试音量";
+	} else if (ps[n] < 2) {
+		btn.classList.remove("disable");
+		btn.textContent = "▶ 播放";
 	} else {
-		if (ps[n] < 2) {
-			btn.classList.remove("disable");
-			btn.textContent = "▶ 播放";
-		} else {
-			btn.textContent = "▶ 播放";
-		}
+		btn.textContent = "▶ 播放";
 	}
 }
 
