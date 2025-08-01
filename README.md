@@ -1,3 +1,5 @@
+#### This project is a wip, it is missing some crucial components that are necessary for it to work.
+
 This repository uses assets that are the original work of Wiwi Kuan (NiceChord).
 
 ## License
